@@ -29,8 +29,22 @@ To write a Python program that:
    - Otherwise, print "Stack is not full".
 
 ## 📝 Program
-Add Code here
+```
+from queue import LifoQueue
 
+stack = LifoQueue(maxsize=4)
+
+stack.put('a')
+stack.put('b')
+stack.put('c')
+
+if stack.full():
+    print("Stack is full")
+else:
+    print("Stack is not full")
+```
 ## Sample Input & Output
+<img width="498" height="158" alt="516319886-470cb453-1ba1-4b8a-af46-e52b4948561e" src="https://github.com/user-attachments/assets/e7dbaeff-ed52-4e07-baec-f776d81d45f9" />
 
 ## Result
+The program is run successfully.
